@@ -20,20 +20,20 @@
                                 </td>
                             </tr>
                             <xsl:for-each select="entree">
-                                <tr>
-                                    <xsl:attribute name="vegetarian">
-                                        <xsl:value-of select="boolean(./@vegetarian)" />
-                                    </xsl:attribute>
-                                    <td align="center">
-                                        <input name="item0" type="checkbox" />
-                                    </td>
-                                    <td>
-                                        <xsl:value-of select="item" />
-                                    </td>
-                                    <td align="right">
-                                        <xsl:value-of select="price" />
-                                    </td>
-                                </tr>
+                            <tr id="{position()}">
+                                <xsl:attribute name="vegetarian">
+                                    <xsl:value-of select="boolean(./@vegetarian)" />
+                                </xsl:attribute>
+                                <td align="center">
+                                    <input name="item0" type="checkbox" />
+                                </td>
+                                <td>
+                                    <xsl:value-of select="item" />
+                                </td>
+                                <td align="right">
+                                    <xsl:value-of select="price" />
+                                </td>
+                            </tr>
                             </xsl:for-each>
                         </xsl:for-each>
                     </tbody>

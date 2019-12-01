@@ -9,10 +9,6 @@
       <item>Paddy's French Fries</item>
       <price>7.50</price>
     </entree>
-    <entree>
-      <item>Huevos Rancheros</item>
-      <price>8.50</price>
-    </entree>
   </section>
   <section name="Breakfast">
     <entree>
@@ -34,10 +30,6 @@
     <entree>
       <item>Croissant</item>
       <price>3.99</price>
-    </entree>
-    <entree>
-      <item>7</item>
-      <price>7</price>
     </entree>
   </section>
   <section name="Lunch">
