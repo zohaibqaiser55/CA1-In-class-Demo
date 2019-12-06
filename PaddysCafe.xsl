@@ -4,11 +4,11 @@
                 <table id="menuTable" class="indent">
                     <thead>
                         <tr>
-                            <th colspan="3">Paddy's Cafe Menu</th>
+                            <th colspan="3">Book List, Select now!</th>
                         </tr>
                         <tr>
                             <th>Select</th>
-                            <th>Item</th>
+                            <th>Book</th>
                             <th>Price</th>
                         </tr>
                     </thead>

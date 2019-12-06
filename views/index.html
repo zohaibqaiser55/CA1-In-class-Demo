@@ -6,24 +6,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<title>IWA Demo App</title>
+	<title>Book Land </title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/PaddysCafeStyles.css" rel="stylesheet">
+	<link href="css/BooklandStyleSheet.css" rel="stylesheet">
 </head>
 
-<body>
+<body >
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-		<div class="container">	<a class="navbar-brand" href="#">Paddy's Cafe</a>
+    
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark static-top">
+		<div class="container"><img src="images/logo.png" alt="bookland_logo"WIDTH=208 HEIGHT=45 >
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">	<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
-					<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-					<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+					<li class="nav-item active"><button type="home"><a class="nav-link" href="#"style="color:#000000;">Home<span class="sr-only">(current)</span></a></li></button>
+					<li class="nav-item"><button type="about"><a class="nav-link" style="color:#000000;">About</a></li></button>
+					<li class="nav-item"><button type="services"><a class="nav-link" style="color:#000000;">Services</a></li></button>
+					<li class="nav-item"><button type="contact"><a class="nav-link" style="color:#000000;">Contact</a></li></button>
 				</ul>
 			</div>
 		</div>
@@ -32,35 +33,36 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-left">
-				<h1 class="mt-5">Welcome to Paddy's Cafe</h1>
-				<p class="lead">Select your entrees from the menu below.</p>
+				<h1 class="mt-5">Land of Books </h1>
+                <h6><u>Your Journey Start`s NOW!</u></h6><br>	
+				<p class="lead" ><center><b style="color:#DE0000;">  Select your book from the list below.</b></center></p>
 			</div>
 			<div id="results" class="col-lg-8 text-center order-3"></div>
 			<div class="col-lg-4 text-center order-2">
 				<form enctype="application/json" action="/post/json" method="post">
 					<div class="form-group">
 						<select class="form-control" name="sec_n">
-							<option value="0">Side Dishes</option>
-							<option value="1">Breakfast</option>
-							<option value="2">Lunch</option>
-							<option value="3">Dinner</option>
+							<option value="0">Horror</option>
+							<option value="1">Romantic</option>
+							<option value="2">Action</option>
+							<option value="3">Manga</option>
 						</select>
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="item" placeholder="Item">
+						<input class="form-control" type="text" name="item" placeholder="Enter Book Name">
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="text" name="price" placeholder="Price">
+						<input class="form-control" type="text" name="price" placeholder="Enter Price">
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Submit</button>
 				</form>
                     <button id="delete" class="btn btn-block btn-danger">Delete</button>
-                    <p class="text-muted">To delete an entree, click the required row first</p>
+                    <p style="color:#000000;">To delete an entree, click the required row first</p>
 			</div>
 		</div>
 	</div>
 	<footer class="footer">
-		<div class="container">	<span class="text-muted">&copy; 2019</span>
+		<div class="container">	<span class="text-muted">&copy; Designed by Zohaib Qaiser 2017400</span>
 		</div>
 	</footer>
 	<!-- Bootstrap core JavaScript -->
